@@ -1,0 +1,278 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+h1{
+    padding:10px 10px;
+    color:yellow;
+  
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+navbar li,a{
+    font-family: sans-serif;
+    color: white;
+    text-decoration: none;
+    padding:10px 10px;
+}
+
+header{
+    height: 70px;
+    display: flex;
+    background-color: darkslategrey;
+    border-bottom: 4px solid black;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.navbar{
+    list-style: none;
+    margin: auto;
+ 
+}
+
+.navbar li{
+    display: inline-block;
+ 
+    
+}
+
+.navbar li a:hover{
+    background:green;
+   
+   
+}
+
+.login{
+    margin-left: auto;
+}
+
+.login:hover{
+    background: green;
+}
+
+.grid_container{
+    border: 4px solid black;
+    background-color:khaki;
+    font-family:sans-serif;
+    width: 1024px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "main main aside"
+    "main main aside"
+    "main main aside"
+    "footer footer footer";
+}
+
+.grid_container2{
+    border: 4px solid black;
+    font-family:sans-serif;
+    width: 1024px;
+    height: 700px;
+    display:flex;
+    flex-direction: column;
+    background-color:khaki;
+}
+
+.userlogin{
+    width: 200px;
+    border: 2px solid black;
+    margin-top: auto;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-family: sans-serif;
+}
+
+form{
+    border: 2px solid black;
+    border-radius: 25px;
+    padding:5px;
+    margin-top: 10px;
+    margin-bottom: auto;
+    margin-left: 200px;
+    margin-right: 200px;
+    height: 200px;
+    width: 500x;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    font-family: sans-serif;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+}
+
+label[for="uname"]{
+    font-size: 30px;
+    margin-left: 50px;
+ }
+
+label[for="pword"]{
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+input[ name="uname"]{
+    height: 40px;
+    width: 200px;
+    font-size: 23px;
+    margin-right: 70px;
+}
+
+input[ name="pword"]{
+    height: 40px;
+    width: 200px;
+    font-size: 23px;
+    margin-right: 70px;
+}
+
+input[ id="i3"]{
+    height: 40px;
+    width: 200px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-left: 60px;
+    background-color:lightskyblue;
+    cursor: pointer;
+}
+
+
+input[ id="i4"]{
+    height: 40px;
+    width: 200px;
+    font-size: 20px;
+    margin-right: 60px;
+    border-radius: 10px;
+    background-color:red;
+    cursor: pointer;
+}
+
+.nested{
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    border-right: 4px solid black;
+    font-family:sans-serif;
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "main_1 ."
+    "main_2 main_2"
+    "main_3 main_4";  
+}
+
+
+
+.header{
+    grid-area: header;
+}
+
+.main{
+   grid-area: main;
+}
+
+.aside{
+    height: 350px;
+    margin: 5px;
+    text-align: center;
+    border: 2px solid black;
+    padding-top: 15px;
+    grid-area:aside;
+    display:inline-block;
+    font-family: sans-serif;
+}
+
+.nations_top{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.nations_middle > li:nth-of-type(odd){
+    color:purple;
+}
+
+.nations_middle > li:nth-of-type(even){
+    color:darkgreen;
+}
+
+.nation1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.nation2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.nation3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.footer{
+    border-top: 2px solid black;
+    grid-area:footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.footer2{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+
+.main_1{
+    border: 2px solid black;
+    grid-area:main_1;
+    margin-bottom: 5px;
+}
+
+.main_2{
+    border: 2px solid black;
+    grid-area:main_2;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.main_3{
+    border: 2px solid black;
+    grid-area:main_3;
+    padding-right: 10px;
+    margin-right: 5px;
+    padding: 5px;
+}
+
+div.main_3 > article p:nth-of-type(2){
+    font-weight: bold;
+    color:blue;
+}
+
+.main_4{
+    border: 2px solid black;
+    grid-area:main_4;
+    padding: 5px;
+}
+
+.main_4 a{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
